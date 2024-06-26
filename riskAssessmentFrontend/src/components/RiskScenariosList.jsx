@@ -48,13 +48,11 @@ border:none;
 border-radius:8px;
 cursor:none;
 }
-max-height:90vh;
 display:flex;
 flex-direction:column;
 gap:20px;
 align-items:center;
 justify-content:center;
-overflow-y:scroll;
 .card {
 .card-header{
 height:40px;
