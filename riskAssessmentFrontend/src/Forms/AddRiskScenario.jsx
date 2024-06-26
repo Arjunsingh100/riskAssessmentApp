@@ -20,7 +20,7 @@ const AddRiskScenarioForms = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setKeyValue({ keyName: key, value: values })
-        const { data } = await axios.post('http://localhost:4000/api/v1/risk/addRiskScenario', {
+        const { data } = await axios.post('https://riskassessmentapp.onrender.com/api/v1/risk/addRiskScenario', {
             riskScenario, riskDescription, riskField1,
             riskField2,
             keyValueObj: { key: key, values: values }

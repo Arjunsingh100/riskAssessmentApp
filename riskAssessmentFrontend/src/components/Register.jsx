@@ -15,7 +15,7 @@ const Register = () => {
 
     const handleRegister = async (e) => {
         e.preventDefault();
-        const { data } = await axios.post('http://localhost:4000/api/v1/auth/register', { firstName, lastName, email, password });
+        const { data } = await axios.post('https://riskassessmentapp.onrender.com/api/v1/auth/register', { firstName, lastName, email, password });
         if (data.success) {
             toast.success(data.message)
             navigate('/');

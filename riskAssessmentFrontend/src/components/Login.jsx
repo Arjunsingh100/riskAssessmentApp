@@ -12,7 +12,7 @@ const Login = () => {
 
     const handleLogin = async (e) => {
         e.preventDefault();
-        const { data } = await axios.post('http://localhost:4000/api/v1/auth/login', { email, password });
+        const { data } = await axios.post('https://riskassessmentapp.onrender.com/api/v1/auth/login', { email, password });
         if (data.success) {
             const setUser = localStorage.setItem('auth',JSON.stringify(data))
             navigate('/library');

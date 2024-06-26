@@ -5,7 +5,7 @@ import axios from 'axios'
 const RiskScenariosList = () => {
     const [riskObjects, setRiskObjects] = useState();
     const fetchAllObjects = async () => {
-        const { data } = await axios.get('http://localhost:4000/api/v1/risk/allriskobj');
+        const { data } = await axios.get('https://riskassessmentapp.onrender.com/api/v1/risk/allriskobj');
         setRiskObjects(data?.riskObjects);
         console.log(data?.riskObjects)
     }
