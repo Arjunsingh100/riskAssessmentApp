@@ -31,7 +31,7 @@ const  Sidebar = () => {
               <CDBSidebarMenuItem icon="comments">Chats</CDBSidebarMenuItem>
             </NavLink>
 
-            <NavLink exact to="#" target="_blank" activeClassName="activeClicked">
+            <NavLink exact to="#" activeClassName="activeClicked">
               <CDBSidebarMenuItem icon="users">User Management</CDBSidebarMenuItem>
             </NavLink>
           </CDBSidebarMenu>
